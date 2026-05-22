@@ -1,1 +1,55 @@
-@import "tailwindcss";
+/* --- CSS Variables for Theming --- */
+:root {
+  /* Dark Theme Colors */
+  --bg-color: #1a1a1a;
+  --surface-color: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  
+  /* Accent Colors (Neon Cyan/Green) */
+  --accent-cyan: #00f0ff;
+  --accent-green: #39ff14;
+
+  /* Glassmorphism settings */
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Global Reset --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* --- Bento Grid Layout --- */
+.bento-grid {
+  display: grid;
+  /* Creates a responsive grid that automatically wraps */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Reusable Card Component --- */
+.bento-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 240, 255, 0.1);
+  border-color: var(--accent-cyan);
+}
