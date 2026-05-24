@@ -1,0 +1,34 @@
+.navbar {
+    background-color: var(--navbar-bg, #3644e2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 64px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+/* ensure following content isn't hidden under the fixed navbar */
+.navbar + * {
+    padding-top: 64px;
+}
+
+.links a{
+    color : var(--text-primary);
+    text-decoration : none;
+    margin-left : 20px;
+    font-weight : 500;
+    transition : color 0.3s ease;
+}
