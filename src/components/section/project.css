@@ -1,4 +1,4 @@
 #Project{
     height: 60vh;
-    background-color: rgb(67, 111, 118);
+    background-color: var(--primary-bg);
 }

@@ -1,14 +1,14 @@
 /* --- CSS Variables for Theming --- */
 :root {
   /* Dark Theme Colors */
-  --bg-color: #1e1e1e;
+  --bg-color: #000000;
   --surface-color: #2a2a2a;
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
-  
+
   /* Accent Colors (Neon Cyan/Green) */
   --accent-cyan: #00f0ff;
-  --accent-green: #39ff14;
+  --accent-green: #21b519;
 
   /* Glassmorphism settings */
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -28,4 +28,3 @@ body {
   min-height: 100vh;
 
 }
-
