@@ -1,0 +1,22 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.heading
+{
+    font-size: 6rem;
+    color: var(--accent-green);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+   
+}
+
+
+
+.heading:hover{
+     transform: translateX(5px);
+}

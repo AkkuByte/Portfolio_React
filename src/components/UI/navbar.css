@@ -1,5 +1,6 @@
+
 .navbar {
-    background-color: var(--navbar-bg, #3644e2);
+    background-color: var(--surface-color);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: fixed;
     top: 0;
@@ -25,10 +26,3 @@
     padding-top: 64px;
 }
 
-.links a{
-    color : var(--text-primary);
-    text-decoration : none;
-    margin-left : 20px;
-    font-weight : 500;
-    transition : color 0.3s ease;
-}
